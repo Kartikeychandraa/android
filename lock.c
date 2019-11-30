@@ -6,22 +6,8 @@ for(count=0;count<=3;count++)
 {scanf("\n %d",&pass);
 if(pass==1234)
 {printf(" !! UNLOCKED !! \n ");
-break;}
-else
-if(count==3)
-{printf("\n Phone is permanently locked go to your operator \n");
-printf("\n Dial Emergency number examples \n 100 for police \n 108 for ambulance \n 101 for Fire ");
-scanf("%d",&ch);
-if(ch==100)
-    printf("Police will arrive in a minute \n !! PLEASE WAIT!!");
-    else if(ch==108)
-        printf("Ambulance will arrive in a minute \n !! BE CALM !!");
-    else if(ch==101)
-        printf("Firefighter`s are arriving \n !! PLEASE WAIT !!");
-return 0;}
-else
-{printf(" !! INCORRECT PASSWORD !! \n");}
-}
+
+
 printf("\n Press 1 for calculator \n Press 2 for lock your phone \n");
 scanf("%d",&ch);
         if(ch==1)
@@ -62,12 +48,21 @@ while(pass==1)
                 break;
 }
 }
+
 }
-        else if(ch==2)
-        return 0;
+break;}
 }
 
 
+printf("\n Phone is permanently locked go to your operator \n");
+printf("\n Dial Emergency number examples \n 100 for police \n 108 for ambulance \n 101 for Fire ");
+scanf("%d",&ch);
+if(ch==100)
+    printf("Police will arrive in a minute \n !! PLEASE WAIT!!");
+    else if(ch==108)
+        printf("Ambulance will arrive in a minute \n !! BE CALM !!");
+    else if(ch==101)
+        printf("Firefighter`s are arriving \n !! PLEASE WAIT !!");
+printf(" !! INCORRECT PASSWORD !! \n");
 
-
-
+}
